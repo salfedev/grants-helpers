@@ -1,5 +1,36 @@
+const { constants, functions } = require('../../src/index.js')
+
 describe('index.js', () => {
   it('should run tests', () => {
     expect(true).toBe(true)
+  })
+  it('should have constants', () => {
+    expect(constants).toBeDefined()
+    expect(constants.LIST_COUNTIES).toBeDefined()
+    expect(constants.CURRENCY_FORMAT).toBeDefined()
+    expect(constants.CHARS_MAX_10).toBeDefined()
+    expect(constants.CHARS_MIN_10).toBeDefined()
+    expect(constants.CHARS_MAX_100).toBeDefined()
+    expect(constants.WORDS_MAX_60).toBeDefined()
+    expect(constants.CHARS_MAX_250).toBeDefined()
+    expect(constants.SELECT_VARIABLE_TO_REPLACE).toBeDefined()
+    expect(constants.DELETE_POSTCODE_CHARS_REGEX).toBeDefined()
+    expect(constants.POSTCODE_REGEX).toBeDefined()
+    expect(constants.WHOLE_NUMBER_REGEX).toBeDefined()
+    expect(constants.SBI_REGEX).toBeDefined()
+    expect(constants.NUMBER_REGEX).toBeDefined()
+    expect(constants.NAME_ONLY_REGEX).toBeDefined()
+    expect(constants.PHONE_REGEX).toBeDefined()
+    expect(constants.EMAIL_REGEX).toBeDefined()
+    expect(constants.PROJECT_COST_REGEX).toBeDefined()
+    expect(constants.CHARS_MAX_18).toBeDefined()
+    expect(constants.ADDRESS_REGEX).toBeDefined()
+  })
+
+  it('should have functions', () => {
+    expect(functions).toBeDefined()
+    expect(functions.formatUKCurrency).toBeDefined()
+    expect(functions.setYarValue).toBeDefined()
+    expect(functions.getYarValue).toBeDefined()
   })
 })

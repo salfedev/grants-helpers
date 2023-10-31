@@ -1,5 +1,5 @@
-const constants = require('./src/constants')
-const functions = require('./src/functions')
+const constants = require('./constants')
+const functions = require('./functions')
 
 module.exports = {
   constants,
