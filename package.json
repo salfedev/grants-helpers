@@ -1,0 +1,42 @@
+{
+  "name": "grants-helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --forceExit --bail --coverage",
+    "test:watch": "jest --watchAll --runInBand --detectOpenHandles --forceExit --bail",
+    "lint": "standard --fix"
+  },
+  "keywords": [],
+  "author": "salfedev",
+  "license": "OGL-UK-3.0",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "grants-helpers": "^1.0.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "expect",
+      "it",
+      "test",
+      "afterEach",
+      "jest",
+      "beforeAll",
+      "afterAll",
+      "browser",
+      "assert",
+      "$",
+      "XMLHttpRequest"
+    ]
+  },
+  "ignore": [
+    "package-lock.json",
+    "package.json"
+  ]
+}
