@@ -1,7 +1,8 @@
-const constants = require('./src/constants')
-const functions = require('./src/functions')
-
+const constants = require('./constants')
+const functions = require('./functions')
+const regex = require('./constants/regex')
 module.exports = {
-  constants,
-  functions
+  ...constants,
+  ...functions,
+  ...regex
 }
